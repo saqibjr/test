@@ -20,7 +20,8 @@ Download the following packages on your local machine:
 - NiFi
     1. Run NiFi on your machine
     Open the NiFi directory on terminal and input command: (It usually takes minutes to start)
-        ```sh
+        ```
+        sh
         $ bin/nifi.sh run
         ```
     2. Access NiFi GUI via http://localhost:8080/nifi/
