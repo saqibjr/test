@@ -51,8 +51,8 @@ Download the following packages on your local machine:
 - Kafka to Spark
     1. Copy the file path 
         of "sparkCS.jar" that is in folder: /core-analytics-deliverables/Kafka-Spark/ 
-    2. 
-        Submit the job to Spark by changing Path/To in the following commands: 
+    2. Submit 
+        the job to Spark by changing Path/To in the following commands: 
         ```
         $ sh
         $ zip -d Path/To/SparkCS.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
