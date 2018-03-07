@@ -18,37 +18,41 @@ Download the following packages on your local machine:
     
 
 - NiFi
-    1. Run NiFi on your machine
+    1. Run NiFi on your machine. 
     Open the NiFi directory on terminal and input command: (It usually takes minutes to start)
         ```
-        sh
+        $ sh
         $ bin/nifi.sh run
         ```
     2. Access NiFi GUI via http://localhost:8080/nifi/
-    3. Import the template from /core-analytics-deliverables/NiFi-Kafka/
-    4. Edit the configuration of the NiFi processors. For instance, modify the path to get and save files corresponding to your local system.
+    3. Import the template from /core-analytics-deliverables/NiFi-Kafka/ and drag the template icon from the top menu to the main screen.
+    4. Double click the process relevant to you. Double click the processor and click properties to edit the processors' configurations.
+    For instance, modify the path to get and save files corresponding to your local system.
     5. Right click on the processor to start or stop the process.
     
     
 - NiFi to Kafka
     1. Start Zookeeper
-        Change to the zookeeper folder and input command
-        ```sh
+        Open the Zookeeper directory and input command:
+        ```
+        $ sh
         $ cp conf/zoo_sample.cfg conf/zoo.cfg
         $ ./bin/zkServer.sh start
         ```
     2. Start Kafka
-        Change to the kafka folder and input command
-        ```sh
+        Open the Kafka directory and input command: 
+        ```
+        $ sh
         $ bin/kafka-server-start.sh config/server.properties
         ```
-    3. Start the NiFi processors for transmitting data to Kafka
+    3. Add relevant files (CSV/JSON) to the input directory you configured then start the NiFi processors that are relevant to transmit data to Kafka by pressing the play button. 
     
     
 - Kafka to Spark
-    1. Copy the path to the spark job "sparkCS.jar" in  folder /core-analytics-deliverables/Kafka-Spark/
-    2. Submit the job to Spark
-        ```sh
+    1. Copy the file path of "sparkCS.jar" that is in folder: /core-analytics-deliverables/Kafka-Spark/
+    2. Submit the job to Spark by changing Path/To in the following commands: 
+        ```
+        $ sh
         $ zip -d Path/To/SparkCS.jar META-INF/*.RSA META-INF/*.DSA META-INF/*.SF
         $ ./bin/spark-submit   --class com.ipponusa.SparkConsumer   --master local[8]   Path/To/SparkCS.jar
         ```
