@@ -1,6 +1,5 @@
 # UCL System Engineering Project - Peach
 PEACH core architecture and generator
-By Mengyang, Sandipan and Desislava
 # Developer manual for Core Analytics Engine
 This manual includes steps and tips for 
 - Setting up the core architecture locally. 
@@ -20,7 +19,7 @@ Download the following packages on your local machine:
 
 - NiFi
     1. Run NiFi on your machine
-    Change to the nifi directory and input command: (It usually takes minutes to start)
+    Open the NiFi directory on terminal and input command: (It usually takes minutes to start)
         ```sh
         $ bin/nifi.sh run
         ```
