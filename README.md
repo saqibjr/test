@@ -32,14 +32,14 @@ Download the following packages on your local machine:
     
     
 - NiFi to Kafka
-    1. Start Zookeeper
+    1. Start Zookeeper: 
         Open the Zookeeper directory and input command:
         ```
         $ sh
         $ cp conf/zoo_sample.cfg conf/zoo.cfg
         $ ./bin/zkServer.sh start
         ```
-    2. Start Kafka
+    2. Start Kafka: 
         Open the Kafka directory and input command: 
         ```
         $ sh
@@ -64,7 +64,8 @@ Download the following packages on your local machine:
     http://druid.io/docs/0.10.0/tutorials/quickstart.html
     http://druid.io/docs/0.10.0/tutorials/tutorial-kafka.html
     2. Run Metabase
-        ```sh
+        ```
+        $ sh
         $ docker run -d -p 3000:3000 --name metabase metabase/metabase
         ```
 
